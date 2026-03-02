@@ -7,8 +7,16 @@
 
 import UIKit
 
+protocol HomeTableViewCellDelegate: AnyObject {
+    func didAdd(at indexPath: IndexPath)
+    
+    func didMinus(at indexPath: IndexPath)
+}
+
 class HomeTableViewCell: UITableViewCell {
 
+    weak var delegate: HomeTableViewCellDelegate?
+    var indexPath: IndexPath?
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var menuName: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -29,7 +37,8 @@ class HomeTableViewCell: UITableViewCell {
 
     }
     
-    func configure(item: MenuItem) {
+    func configure(item: MenuItem, indexPath: IndexPath) {
+        self.indexPath = indexPath
         menuName.text = item.name
         priceLabel.text = "\(item.price)"
         imgView.image = UIImage(named: item.img)
@@ -43,12 +52,18 @@ class HomeTableViewCell: UITableViewCell {
     
     
     @IBAction func didTapPlusButton() {
-        
+        guard let indexPath else {
+            return
+        }
+        delegate?.didAdd(at: indexPath)
     }
     
     
     @IBAction func didTapMinusButton() {
-        
+        guard let indexPath else {
+            return
+        }
+        delegate?.didMinus(at: indexPath)
     }
     
 }

@@ -37,7 +37,8 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = menuTableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
         let item = data[indexPath.row]
-        cell.configure(item: item)
+        cell.configure(item: item, indexPath: indexPath)
+        cell.delegate = self
         return cell
     }
     
@@ -52,5 +53,20 @@ extension ViewController: UITableViewDelegate {
         menuTableView.reloadRows(at: [indexPath], with: .none)
         
     }
+}
+
+extension ViewController: HomeTableViewCellDelegate {
+    func didAdd(at indexPath: IndexPath) {
+        data[indexPath.row].count += 1
+        menuTableView.reloadRows(at: [indexPath], with: .none)
+    }
+    
+    func didMinus(at indexPath: IndexPath) {
+        data[indexPath.row].count -= 1
+        menuTableView.reloadRows(at: [indexPath], with: .none)
+    }
+
+    
+    
 }
 
