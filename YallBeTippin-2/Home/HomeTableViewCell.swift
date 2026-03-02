@@ -13,6 +13,8 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var menuName: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    
+    @IBOutlet weak var orderCountStackView: UIStackView!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var subtractButton: UIButton!
@@ -31,6 +33,12 @@ class HomeTableViewCell: UITableViewCell {
         menuName.text = item.name
         priceLabel.text = "\(item.price)"
         imgView.image = UIImage(named: item.img)
+        countLabel.text = "\(item.count)"
+        if item.count > 0 {
+            orderCountStackView.isHidden = false
+        } else {
+            orderCountStackView.isHidden = true
+        }
     }
     
     

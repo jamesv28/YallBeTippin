@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -42,5 +42,15 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     
+}
+
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        menuTableView.deselectRow(at: indexPath, animated: true)
+        data[indexPath.row].count += 1
+        menuTableView.reloadRows(at: [indexPath], with: .none)
+        
+    }
 }
 

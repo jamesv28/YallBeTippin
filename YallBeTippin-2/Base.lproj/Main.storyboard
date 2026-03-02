@@ -91,10 +91,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="31y-sR-pGD" secondAttribute="bottom" id="WfC-Jj-bth"/>
-                                                <constraint firstAttribute="trailing" secondItem="31y-sR-pGD" secondAttribute="trailing" id="bAK-sR-33J"/>
+                                                <constraint firstAttribute="bottom" secondItem="31y-sR-pGD" secondAttribute="bottom" id="N4B-Nf-0HU"/>
                                                 <constraint firstItem="31y-sR-pGD" firstAttribute="top" secondItem="BJV-rz-aRQ" secondAttribute="top" id="m7p-CA-73v"/>
                                                 <constraint firstItem="31y-sR-pGD" firstAttribute="leading" secondItem="BJV-rz-aRQ" secondAttribute="leading" id="pUZ-sg-9V3"/>
+                                                <constraint firstAttribute="trailing" secondItem="31y-sR-pGD" secondAttribute="trailing" id="yn2-5X-a7D"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -102,6 +102,7 @@
                                             <outlet property="countLabel" destination="b6e-y0-VaN" id="6aR-3b-vSq"/>
                                             <outlet property="imgView" destination="5ti-7J-Gr7" id="aoi-UW-wZZ"/>
                                             <outlet property="menuName" destination="LnW-vF-bUc" id="dzm-0Q-Rjr"/>
+                                            <outlet property="orderCountStackView" destination="hUr-e1-SRj" id="wmD-XL-sgK"/>
                                             <outlet property="priceLabel" destination="MHt-JO-T6O" id="fgD-3a-dae"/>
                                             <outlet property="subtractButton" destination="AkO-RZ-3zl" id="sCA-9h-J2M"/>
                                         </connections>
