@@ -99,10 +99,10 @@
 				AA9CF6362F564F9B00AF9435 /* Main.storyboard */,
 				AA9CF6372F564F9B00AF9435 /* SceneDelegate.swift */,
 				AA9CF6382F564F9B00AF9435 /* ViewController.swift */,
+				AA9CF62C2F564F9B00AF9435 /* Home */,
+				AA9CF6442F564FE000AF9435 /* Confirm */,
 				AA9CF6462F564FF700AF9435 /* Receipt */,
 				AA9CF6452F564FEB00AF9435 /* Tip */,
-				AA9CF6442F564FE000AF9435 /* Confirm */,
-				AA9CF62C2F564F9B00AF9435 /* Home */,
 			);
 			path = "YallBeTippin-2";
 			sourceTree = "<group>";

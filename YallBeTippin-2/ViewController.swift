@@ -30,6 +30,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func didTapCartButton(_ sender: UIBarButtonItem) {
+        let sb = UIStoryboard(name: "ConfirmViewController", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ConfirmViewController")
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
