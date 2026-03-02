@@ -11,8 +11,12 @@ class HomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var menuName: UILabel!
-    
     @IBOutlet weak var priceLabel: UILabel!
+    
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var subtractButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -28,5 +32,15 @@ class HomeTableViewCell: UITableViewCell {
         priceLabel.text = "\(item.price)"
         imgView.image = UIImage(named: item.img)
     }
-
+    
+    
+    @IBAction func didTapPlusButton() {
+        
+    }
+    
+    
+    @IBAction func didTapMinusButton() {
+        
+    }
+    
 }

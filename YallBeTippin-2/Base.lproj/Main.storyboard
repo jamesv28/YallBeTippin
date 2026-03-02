@@ -30,23 +30,53 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31y-sR-pGD" userLabel="Stack Container">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="151"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XED-pg-4YJ" userLabel="Vertical Stack View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="243" height="151"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XED-pg-4YJ" userLabel="Description Stack">
+                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="151"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheeseburger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnW-vF-bUc">
-                                                                    <rect key="frame" x="12" y="8" width="223" height="67.666666666666671"/>
+                                                                    <rect key="frame" x="12" y="8" width="183" height="67.666666666666671"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHt-JO-T6O">
-                                                                    <rect key="frame" x="12" y="75.666666666666686" width="223" height="67.333333333333314"/>
+                                                                    <rect key="frame" x="12" y="75.666666666666686" width="183" height="67.333333333333314"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="8"/>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-e1-SRj">
+                                                            <rect key="frame" x="203" y="0.0" width="40" height="151"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69K-sP-h21">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="55"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" image="plus.capsule.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapPlusButton" destination="vZA-S6-B8d" eventType="touchUpInside" id="7qZ-Vs-fjs"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6e-y0-VaN">
+                                                                    <rect key="frame" x="13.666666666666657" y="55" width="13" height="41"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkO-RZ-3zl">
+                                                                    <rect key="frame" x="0.0" y="96" width="40" height="55"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" image="minus.circle.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="didTapMinusButton" destination="vZA-S6-B8d" eventType="touchUpInside" id="Tqy-fE-cbe"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="CtL-Dy-NUl"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="5ti-7J-Gr7">
                                                             <rect key="frame" x="243" y="0.0" width="150" height="151"/>
@@ -68,9 +98,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="addButton" destination="69K-sP-h21" id="99c-dm-Vig"/>
+                                            <outlet property="countLabel" destination="b6e-y0-VaN" id="6aR-3b-vSq"/>
                                             <outlet property="imgView" destination="5ti-7J-Gr7" id="aoi-UW-wZZ"/>
                                             <outlet property="menuName" destination="LnW-vF-bUc" id="dzm-0Q-Rjr"/>
                                             <outlet property="priceLabel" destination="MHt-JO-T6O" id="fgD-3a-dae"/>
+                                            <outlet property="subtractButton" destination="AkO-RZ-3zl" id="sCA-9h-J2M"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,6 +148,8 @@
     </scenes>
     <resources>
         <image name="burger" width="1200" height="1200"/>
+        <image name="minus.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="plus.capsule.fill" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
