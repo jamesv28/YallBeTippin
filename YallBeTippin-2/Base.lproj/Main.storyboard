@@ -118,7 +118,13 @@
                             <constraint firstItem="HNU-6c-Eq7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sV7-2k-ZEZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9sy-Aw-n4U"/>
+                    <navigationItem key="navigationItem" id="9sy-Aw-n4U">
+                        <barButtonItem key="rightBarButtonItem" image="cart" catalog="system" id="swO-4R-mTG">
+                            <connections>
+                                <action selector="didTapCartButton:" destination="BYZ-38-t0r" id="4I7-qo-Cg0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="menuTableView" destination="HNU-6c-Eq7" id="bDP-Rj-EAX"/>
                     </connections>
@@ -148,6 +154,7 @@
     </scenes>
     <resources>
         <image name="burger" width="1200" height="1200"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="minus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="plus.capsule.fill" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">

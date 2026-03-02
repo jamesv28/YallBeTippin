@@ -6,30 +6,43 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA9CF63A2F564F9B00AF9435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6302F564F9B00AF9435 /* Assets.xcassets */; };
+		AA9CF63C2F564F9B00AF9435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6342F564F9B00AF9435 /* LaunchScreen.storyboard */; };
+		AA9CF63D2F564F9B00AF9435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6362F564F9B00AF9435 /* Main.storyboard */; };
+		AA9CF63E2F564F9B00AF9435 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF62B2F564F9B00AF9435 /* HomeTableViewCell.swift */; };
+		AA9CF63F2F564F9B00AF9435 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF62D2F564F9B00AF9435 /* MenuItem.swift */; };
+		AA9CF6402F564F9B00AF9435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF62F2F564F9B00AF9435 /* AppDelegate.swift */; };
+		AA9CF6412F564F9B00AF9435 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6312F564F9B00AF9435 /* DataModel.swift */; };
+		AA9CF6422F564F9B00AF9435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6372F564F9B00AF9435 /* SceneDelegate.swift */; };
+		AA9CF6432F564F9B00AF9435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6382F564F9B00AF9435 /* ViewController.swift */; };
+		AA9CF6482F56512800AF9435 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6472F56512800AF9435 /* TipViewController.swift */; };
+		AA9CF64C2F5652B900AF9435 /* TipViweController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF64B2F5652B900AF9435 /* TipViweController.storyboard */; };
+		AA9CF64E2F5653CF00AF9435 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF64D2F5653CF00AF9435 /* ConfirmViewController.swift */; };
+		AA9CF6502F5653E500AF9435 /* ConfirmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */; };
+		AA9CF6522F56542100AF9435 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */; };
+		AA9CF6562F56548400AF9435 /* ReceiptViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AA9CF6092F52826F00AF9435 /* YallBeTippin-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YallBeTippin-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9CF62B2F564F9B00AF9435 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		AA9CF62D2F564F9B00AF9435 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		AA9CF62F2F564F9B00AF9435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA9CF6302F564F9B00AF9435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA9CF6312F564F9B00AF9435 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		AA9CF6322F564F9B00AF9435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9CF6332F564F9B00AF9435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA9CF6352F564F9B00AF9435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA9CF6372F564F9B00AF9435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA9CF6382F564F9B00AF9435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA9CF6472F56512800AF9435 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		AA9CF64B2F5652B900AF9435 /* TipViweController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TipViweController.storyboard; sourceTree = "<group>"; };
+		AA9CF64D2F5653CF00AF9435 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmViewController.storyboard; sourceTree = "<group>"; };
+		AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReceiptViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AA9CF61B2F52827100AF9435 /* Exceptions for "YallBeTippin-2" folder in "YallBeTippin-2" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = AA9CF6082F52826F00AF9435 /* YallBeTippin-2 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		AA9CF60B2F52826F00AF9435 /* YallBeTippin-2 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AA9CF61B2F52827100AF9435 /* Exceptions for "YallBeTippin-2" folder in "YallBeTippin-2" target */,
-			);
-			path = "YallBeTippin-2";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA9CF6062F52826F00AF9435 /* Frameworks */ = {
@@ -45,7 +58,7 @@
 		AA9CF6002F52826F00AF9435 = {
 			isa = PBXGroup;
 			children = (
-				AA9CF60B2F52826F00AF9435 /* YallBeTippin-2 */,
+				AA9CF6392F564F9B00AF9435 /* YallBeTippin-2 */,
 				AA9CF60A2F52826F00AF9435 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +69,69 @@
 				AA9CF6092F52826F00AF9435 /* YallBeTippin-2.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA9CF62C2F564F9B00AF9435 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF62B2F564F9B00AF9435 /* HomeTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA9CF62E2F564F9B00AF9435 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF62D2F564F9B00AF9435 /* MenuItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA9CF6392F564F9B00AF9435 /* YallBeTippin-2 */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF62E2F564F9B00AF9435 /* Model */,
+				AA9CF62F2F564F9B00AF9435 /* AppDelegate.swift */,
+				AA9CF6302F564F9B00AF9435 /* Assets.xcassets */,
+				AA9CF6312F564F9B00AF9435 /* DataModel.swift */,
+				AA9CF6322F564F9B00AF9435 /* Info.plist */,
+				AA9CF6342F564F9B00AF9435 /* LaunchScreen.storyboard */,
+				AA9CF6362F564F9B00AF9435 /* Main.storyboard */,
+				AA9CF6372F564F9B00AF9435 /* SceneDelegate.swift */,
+				AA9CF6382F564F9B00AF9435 /* ViewController.swift */,
+				AA9CF6462F564FF700AF9435 /* Receipt */,
+				AA9CF6452F564FEB00AF9435 /* Tip */,
+				AA9CF6442F564FE000AF9435 /* Confirm */,
+				AA9CF62C2F564F9B00AF9435 /* Home */,
+			);
+			path = "YallBeTippin-2";
+			sourceTree = "<group>";
+		};
+		AA9CF6442F564FE000AF9435 /* Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF64D2F5653CF00AF9435 /* ConfirmViewController.swift */,
+				AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */,
+			);
+			path = Confirm;
+			sourceTree = "<group>";
+		};
+		AA9CF6452F564FEB00AF9435 /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF6472F56512800AF9435 /* TipViewController.swift */,
+				AA9CF64B2F5652B900AF9435 /* TipViweController.storyboard */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		AA9CF6462F564FF700AF9435 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */,
+				AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */,
+			);
+			path = Receipt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +148,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				AA9CF60B2F52826F00AF9435 /* YallBeTippin-2 */,
 			);
 			name = "YallBeTippin-2";
 			packageProductDependencies = (
@@ -122,6 +195,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9CF63A2F564F9B00AF9435 /* Assets.xcassets in Resources */,
+				AA9CF63C2F564F9B00AF9435 /* LaunchScreen.storyboard in Resources */,
+				AA9CF6502F5653E500AF9435 /* ConfirmViewController.storyboard in Resources */,
+				AA9CF63D2F564F9B00AF9435 /* Main.storyboard in Resources */,
+				AA9CF6562F56548400AF9435 /* ReceiptViewController.storyboard in Resources */,
+				AA9CF64C2F5652B900AF9435 /* TipViweController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +211,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9CF63E2F564F9B00AF9435 /* HomeTableViewCell.swift in Sources */,
+				AA9CF63F2F564F9B00AF9435 /* MenuItem.swift in Sources */,
+				AA9CF6402F564F9B00AF9435 /* AppDelegate.swift in Sources */,
+				AA9CF6522F56542100AF9435 /* ReceiptViewController.swift in Sources */,
+				AA9CF64E2F5653CF00AF9435 /* ConfirmViewController.swift in Sources */,
+				AA9CF6482F56512800AF9435 /* TipViewController.swift in Sources */,
+				AA9CF6412F564F9B00AF9435 /* DataModel.swift in Sources */,
+				AA9CF6422F564F9B00AF9435 /* SceneDelegate.swift in Sources */,
+				AA9CF6432F564F9B00AF9435 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA9CF6342F564F9B00AF9435 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA9CF6332F564F9B00AF9435 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AA9CF6362F564F9B00AF9435 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA9CF6352F564F9B00AF9435 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA9CF61D2F52827100AF9435 /* Debug */ = {
