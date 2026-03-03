@@ -9,10 +9,21 @@ import UIKit
 
 class ConfirmViewController: UIViewController {
 
+    let items: [MenuItem]
+    
+    init(coder: NSCoder, items: [MenuItem]) {
+        self.items = items
+        super.init(coder: coder)!
+    }
+    
+    // below is required with the init function
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(items)
     }
     
 

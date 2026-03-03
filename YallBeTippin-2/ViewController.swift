@@ -31,8 +31,22 @@ class ViewController: UIViewController {
     
     @IBAction func didTapCartButton(_ sender: UIBarButtonItem) {
         let sb = UIStoryboard(name: "ConfirmViewController", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "ConfirmViewController")
+        let items: [MenuItem] = getMenuItems()
+        let vc = sb.instantiateViewController(identifier: "ConfirmViewController") { coder in
+            let confirmVC = ConfirmViewController(coder: coder, items: items)
+            return confirmVC
+        }
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func getMenuItems() -> [MenuItem] {
+        var items: [MenuItem] = []
+        for item in data {
+            if item.count > 0 {
+                items.append(item)
+            }
+        }
+        return items
     }
 }
 
