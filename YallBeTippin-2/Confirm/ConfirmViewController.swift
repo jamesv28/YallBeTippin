@@ -9,7 +9,8 @@ import UIKit
 
 class ConfirmViewController: UIViewController {
 
-    let items: [MenuItem]
+    @IBOutlet weak var tableView: UITableView!
+    private var items: [MenuItem]
     
     init(coder: NSCoder, items: [MenuItem]) {
         self.items = items
@@ -24,9 +25,14 @@ class ConfirmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(items)
+        setupTableView()
     }
     
-
+    func setupTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UINib(nibName: "ConfirmCell", bundle: nil), forCellReuseIdentifier: "ConfirmCell")
+    }
     /*
     // MARK: - Navigation
 
@@ -37,4 +43,38 @@ class ConfirmViewController: UIViewController {
     }
     */
 
+}
+
+extension ConfirmViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ConfirmCell") as! ConfirmCell
+        let item = items[indexPath.row]
+
+        cell.configure(item: item, indexPath: indexPath)
+        cell.delegate = self
+        return cell
+    }
+    
+}
+
+extension ConfirmViewController: UITableViewDelegate {
+    
+}
+
+extension ConfirmViewController: ConfirmCellDelegate {
+    func didAdd(at indexPath: IndexPath) {
+        items[indexPath.row].count += 1
+        tableView.reloadRows(at: [indexPath], with: .none)
+    }
+    
+    func didMinus(at indexPath: IndexPath) {
+        items[indexPath.row].count -= 1
+        tableView.reloadRows(at: [indexPath], with: .none)
+    }
+    
+    
 }

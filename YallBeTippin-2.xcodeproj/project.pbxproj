@@ -22,6 +22,8 @@
 		AA9CF6502F5653E500AF9435 /* ConfirmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */; };
 		AA9CF6522F56542100AF9435 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */; };
 		AA9CF6562F56548400AF9435 /* ReceiptViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */; };
+		AA9CF6592F5667D200AF9435 /* ConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6582F5667D200AF9435 /* ConfirmCell.xib */; };
+		AA9CF65A2F5667D200AF9435 /* ConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6572F5667D200AF9435 /* ConfirmCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmViewController.storyboard; sourceTree = "<group>"; };
 		AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReceiptViewController.storyboard; sourceTree = "<group>"; };
+		AA9CF6572F5667D200AF9435 /* ConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCell.swift; sourceTree = "<group>"; };
+		AA9CF6582F5667D200AF9435 /* ConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 			children = (
 				AA9CF64D2F5653CF00AF9435 /* ConfirmViewController.swift */,
 				AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */,
+				AA9CF6572F5667D200AF9435 /* ConfirmCell.swift */,
+				AA9CF6582F5667D200AF9435 /* ConfirmCell.xib */,
 			);
 			path = Confirm;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9CF63A2F564F9B00AF9435 /* Assets.xcassets in Resources */,
+				AA9CF6592F5667D200AF9435 /* ConfirmCell.xib in Resources */,
 				AA9CF63C2F564F9B00AF9435 /* LaunchScreen.storyboard in Resources */,
 				AA9CF6502F5653E500AF9435 /* ConfirmViewController.storyboard in Resources */,
 				AA9CF63D2F564F9B00AF9435 /* Main.storyboard in Resources */,
@@ -211,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9CF65A2F5667D200AF9435 /* ConfirmCell.swift in Sources */,
 				AA9CF63E2F564F9B00AF9435 /* HomeTableViewCell.swift in Sources */,
 				AA9CF63F2F564F9B00AF9435 /* MenuItem.swift in Sources */,
 				AA9CF6402F564F9B00AF9435 /* AppDelegate.swift in Sources */,
