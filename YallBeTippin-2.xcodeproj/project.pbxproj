@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA83B39C2F5E3FB200CC597D /* AddTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83B39B2F5E3FB200CC597D /* AddTipViewController.swift */; };
+		AA83B39E2F5E3FCA00CC597D /* AddTipViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA83B39D2F5E3FCA00CC597D /* AddTipViewController.storyboard */; };
 		AA9CF63A2F564F9B00AF9435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6302F564F9B00AF9435 /* Assets.xcassets */; };
 		AA9CF63C2F564F9B00AF9435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6342F564F9B00AF9435 /* LaunchScreen.storyboard */; };
 		AA9CF63D2F564F9B00AF9435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6362F564F9B00AF9435 /* Main.storyboard */; };
@@ -16,8 +18,6 @@
 		AA9CF6412F564F9B00AF9435 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6312F564F9B00AF9435 /* DataModel.swift */; };
 		AA9CF6422F564F9B00AF9435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6372F564F9B00AF9435 /* SceneDelegate.swift */; };
 		AA9CF6432F564F9B00AF9435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6382F564F9B00AF9435 /* ViewController.swift */; };
-		AA9CF6482F56512800AF9435 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6472F56512800AF9435 /* TipViewController.swift */; };
-		AA9CF64C2F5652B900AF9435 /* TipViweController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF64B2F5652B900AF9435 /* TipViweController.storyboard */; };
 		AA9CF64E2F5653CF00AF9435 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF64D2F5653CF00AF9435 /* ConfirmViewController.swift */; };
 		AA9CF6502F5653E500AF9435 /* ConfirmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */; };
 		AA9CF6522F56542100AF9435 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */; };
@@ -27,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA83B39B2F5E3FB200CC597D /* AddTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTipViewController.swift; sourceTree = "<group>"; };
+		AA83B39D2F5E3FCA00CC597D /* AddTipViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTipViewController.storyboard; sourceTree = "<group>"; };
 		AA9CF6092F52826F00AF9435 /* YallBeTippin-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YallBeTippin-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9CF62B2F564F9B00AF9435 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		AA9CF62D2F564F9B00AF9435 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -38,8 +40,6 @@
 		AA9CF6352F564F9B00AF9435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA9CF6372F564F9B00AF9435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA9CF6382F564F9B00AF9435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA9CF6472F56512800AF9435 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
-		AA9CF64B2F5652B900AF9435 /* TipViweController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TipViweController.storyboard; sourceTree = "<group>"; };
 		AA9CF64D2F5653CF00AF9435 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		AA9CF64F2F5653E500AF9435 /* ConfirmViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmViewController.storyboard; sourceTree = "<group>"; };
 		AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA83B39A2F5E3F4C00CC597D /* AddTip */ = {
+			isa = PBXGroup;
+			children = (
+				AA83B39B2F5E3FB200CC597D /* AddTipViewController.swift */,
+				AA83B39D2F5E3FCA00CC597D /* AddTipViewController.storyboard */,
+			);
+			path = AddTip;
+			sourceTree = "<group>";
+		};
 		AA9CF6002F52826F00AF9435 = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +115,7 @@
 				AA9CF62C2F564F9B00AF9435 /* Home */,
 				AA9CF6442F564FE000AF9435 /* Confirm */,
 				AA9CF6462F564FF700AF9435 /* Receipt */,
-				AA9CF6452F564FEB00AF9435 /* Tip */,
+				AA83B39A2F5E3F4C00CC597D /* AddTip */,
 			);
 			path = "YallBeTippin-2";
 			sourceTree = "<group>";
@@ -120,15 +129,6 @@
 				AA9CF6582F5667D200AF9435 /* ConfirmCell.xib */,
 			);
 			path = Confirm;
-			sourceTree = "<group>";
-		};
-		AA9CF6452F564FEB00AF9435 /* Tip */ = {
-			isa = PBXGroup;
-			children = (
-				AA9CF6472F56512800AF9435 /* TipViewController.swift */,
-				AA9CF64B2F5652B900AF9435 /* TipViweController.storyboard */,
-			);
-			path = Tip;
 			sourceTree = "<group>";
 		};
 		AA9CF6462F564FF700AF9435 /* Receipt */ = {
@@ -206,8 +206,8 @@
 				AA9CF63C2F564F9B00AF9435 /* LaunchScreen.storyboard in Resources */,
 				AA9CF6502F5653E500AF9435 /* ConfirmViewController.storyboard in Resources */,
 				AA9CF63D2F564F9B00AF9435 /* Main.storyboard in Resources */,
+				AA83B39E2F5E3FCA00CC597D /* AddTipViewController.storyboard in Resources */,
 				AA9CF6562F56548400AF9435 /* ReceiptViewController.storyboard in Resources */,
-				AA9CF64C2F5652B900AF9435 /* TipViweController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,11 +220,11 @@
 			files = (
 				AA9CF65A2F5667D200AF9435 /* ConfirmCell.swift in Sources */,
 				AA9CF63E2F564F9B00AF9435 /* HomeTableViewCell.swift in Sources */,
+				AA83B39C2F5E3FB200CC597D /* AddTipViewController.swift in Sources */,
 				AA9CF63F2F564F9B00AF9435 /* MenuItem.swift in Sources */,
 				AA9CF6402F564F9B00AF9435 /* AppDelegate.swift in Sources */,
 				AA9CF6522F56542100AF9435 /* ReceiptViewController.swift in Sources */,
 				AA9CF64E2F5653CF00AF9435 /* ConfirmViewController.swift in Sources */,
-				AA9CF6482F56512800AF9435 /* TipViewController.swift in Sources */,
 				AA9CF6412F564F9B00AF9435 /* DataModel.swift in Sources */,
 				AA9CF6422F564F9B00AF9435 /* SceneDelegate.swift in Sources */,
 				AA9CF6432F564F9B00AF9435 /* ViewController.swift in Sources */,
