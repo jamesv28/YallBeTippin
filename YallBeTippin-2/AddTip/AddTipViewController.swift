@@ -9,6 +9,23 @@ import UIKit
 
 class AddTipViewController: UIViewController {
 
+    
+    @IBOutlet weak var smallTipButton: UIButton!
+    @IBOutlet weak var mediumTipButton: UIButton!
+    @IBOutlet weak var largeTipButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
+    
+    @IBOutlet weak var stackView: UIStackView!
+    lazy var barButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(
+            title: "Submit",
+            style: .plain,
+            target: self,
+            action: #selector(didTapBurButton)
+        )
+        return button
+    }()
+    
     let items: [MenuItem]
     
     init(coder: NSCoder, items: [MenuItem]) {
@@ -23,18 +40,32 @@ class AddTipViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(items)
-        // Do any additional setup after loading the view.
+        navigationItem.rightBarButtonItem = barButton
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
+        let orientation = UIDevice.current.orientation
+        if orientation.isPortrait {
+            stackView.axis = .vertical
+        } else if orientation.isLandscape {
+            stackView.axis = .horizontal
+        }
     }
-    */
-
+    @objc func didTapBurButton() {
+        
+    }
+    
+    @IBAction func didTapSmallTipButton() {
+    }
+    
+    
+    @IBAction func didTapMediumTipButton() {
+    }
+    
+    @IBAction func didTapLargeTipButton() {
+    }
+    
+    
+    @IBAction func didTapSkipButton() {
+    }
 }

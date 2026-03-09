@@ -50,7 +50,6 @@ class ConfirmViewController: UIViewController {
     
     @objc func didTapBurButton() {
         let sb = UIStoryboard(name: "AddTipViewController", bundle: nil)
-        print("hello goodbye")
         let vc = sb.instantiateViewController(identifier: "AddTipViewController") { [unowned self] coder in
             let TipVC = AddTipViewController(coder: coder, items: items)
             return TipVC
