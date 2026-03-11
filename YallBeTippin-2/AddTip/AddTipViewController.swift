@@ -59,7 +59,10 @@ class AddTipViewController: UIViewController {
     
     @objc func didTapBurButton() {
         let sb = UIStoryboard(name: "ReceiptViewController", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "ReceiptViewController")
+        let vc = sb.instantiateViewController(identifier: "ReceiptViewController") { [unowned self] coder in
+            let receiptVC = ReceiptViewController(coder: coder, items: items)
+            return receiptVC
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
     

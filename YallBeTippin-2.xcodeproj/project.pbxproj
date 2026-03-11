@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AA787D622F61E6EA00BEFFAF /* TipOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA787D612F61E6EA00BEFFAF /* TipOptions.swift */; };
+		AA787D642F62305700BEFFAF /* ReceiptItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA787D632F62305700BEFFAF /* ReceiptItemRow.swift */; };
+		AA787D662F62354B00BEFFAF /* ReceiptTipRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA787D652F62354B00BEFFAF /* ReceiptTipRow.swift */; };
+		AA787D682F62363200BEFFAF /* ReceiptTotalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA787D672F62363200BEFFAF /* ReceiptTotalRow.swift */; };
 		AA83B39C2F5E3FB200CC597D /* AddTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83B39B2F5E3FB200CC597D /* AddTipViewController.swift */; };
 		AA83B39E2F5E3FCA00CC597D /* AddTipViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA83B39D2F5E3FCA00CC597D /* AddTipViewController.storyboard */; };
 		AA9CF63A2F564F9B00AF9435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6302F564F9B00AF9435 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		AA787D612F61E6EA00BEFFAF /* TipOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipOptions.swift; sourceTree = "<group>"; };
+		AA787D632F62305700BEFFAF /* ReceiptItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItemRow.swift; sourceTree = "<group>"; };
+		AA787D652F62354B00BEFFAF /* ReceiptTipRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTipRow.swift; sourceTree = "<group>"; };
+		AA787D672F62363200BEFFAF /* ReceiptTotalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTotalRow.swift; sourceTree = "<group>"; };
 		AA83B39B2F5E3FB200CC597D /* AddTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTipViewController.swift; sourceTree = "<group>"; };
 		AA83B39D2F5E3FCA00CC597D /* AddTipViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTipViewController.storyboard; sourceTree = "<group>"; };
 		AA9CF6092F52826F00AF9435 /* YallBeTippin-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YallBeTippin-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +145,9 @@
 			children = (
 				AA9CF6512F56542100AF9435 /* ReceiptViewController.swift */,
 				AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */,
+				AA787D632F62305700BEFFAF /* ReceiptItemRow.swift */,
+				AA787D652F62354B00BEFFAF /* ReceiptTipRow.swift */,
+				AA787D672F62363200BEFFAF /* ReceiptTotalRow.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -227,10 +236,13 @@
 				AA9CF63F2F564F9B00AF9435 /* MenuItem.swift in Sources */,
 				AA9CF6402F564F9B00AF9435 /* AppDelegate.swift in Sources */,
 				AA9CF6522F56542100AF9435 /* ReceiptViewController.swift in Sources */,
+				AA787D642F62305700BEFFAF /* ReceiptItemRow.swift in Sources */,
 				AA9CF64E2F5653CF00AF9435 /* ConfirmViewController.swift in Sources */,
+				AA787D662F62354B00BEFFAF /* ReceiptTipRow.swift in Sources */,
 				AA9CF6412F564F9B00AF9435 /* DataModel.swift in Sources */,
 				AA787D622F61E6EA00BEFFAF /* TipOptions.swift in Sources */,
 				AA9CF6422F564F9B00AF9435 /* SceneDelegate.swift in Sources */,
+				AA787D682F62363200BEFFAF /* ReceiptTotalRow.swift in Sources */,
 				AA9CF6432F564F9B00AF9435 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
