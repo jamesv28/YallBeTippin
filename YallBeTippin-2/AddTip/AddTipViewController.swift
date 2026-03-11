@@ -9,13 +9,17 @@ import UIKit
 
 class AddTipViewController: UIViewController {
 
-    
     @IBOutlet weak var smallTipButton: UIButton!
     @IBOutlet weak var mediumTipButton: UIButton!
     @IBOutlet weak var largeTipButton: UIButton!
     @IBOutlet weak var skipButton: UIButton!
     
+    lazy var tipSelection: [UIButton] = [
+        smallTipButton, mediumTipButton, largeTipButton, skipButton
+    ]
+    
     @IBOutlet weak var stackView: UIStackView!
+    
     lazy var barButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
             title: "Submit",
@@ -26,6 +30,7 @@ class AddTipViewController: UIViewController {
         return button
     }()
     
+    var tipOptions: TipOptions = .small
     let items: [MenuItem]
     
     init(coder: NSCoder, items: [MenuItem]) {
@@ -39,8 +44,8 @@ class AddTipViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(items)
         navigationItem.rightBarButtonItem = barButton
+        smallTipButton.isSelected = true
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator) {
@@ -51,21 +56,42 @@ class AddTipViewController: UIViewController {
             stackView.axis = .horizontal
         }
     }
+    
     @objc func didTapBurButton() {
-        
+        let sb = UIStoryboard(name: "ReceiptViewController", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ReceiptViewController")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func deselectButtons() {
+        tipSelection.forEach { button in
+            button.isSelected = false
+        }
     }
     
     @IBAction func didTapSmallTipButton() {
+        deselectButtons()
+        smallTipButton.isSelected = true
+        tipOptions = .small
     }
     
     
     @IBAction func didTapMediumTipButton() {
+        deselectButtons()
+        mediumTipButton.isSelected = true
+        tipOptions = .medium
     }
     
     @IBAction func didTapLargeTipButton() {
+        deselectButtons()
+        largeTipButton.isSelected = true
+        tipOptions = .large
     }
     
     
     @IBAction func didTapSkipButton() {
+        deselectButtons()
+        skipButton.isSelected = true
+        tipOptions = .none
     }
 }
