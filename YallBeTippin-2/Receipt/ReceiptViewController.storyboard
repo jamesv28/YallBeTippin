@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="175" width="393" height="609"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="8Pc-nU-r5m" customClass="ReceiptItemRow" customModule="YallBeTippin_2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptItemRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="8Pc-nU-r5m" customClass="ReceiptItemRow" customModule="YallBeTippin_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Pc-nU-r5m" id="Ahi-ri-cd3">
@@ -64,6 +64,11 @@
                                                 <constraint firstItem="7jE-Jj-yCZ" firstAttribute="top" secondItem="Ahi-ri-cd3" secondAttribute="top" constant="5" id="z5F-jE-SCb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countLabel" destination="FKR-zd-Vp6" id="lrV-85-rBH"/>
+                                            <outlet property="nameLabel" destination="eWK-HJ-Vv8" id="cJV-gy-4fu"/>
+                                            <outlet property="priceLabel" destination="SvY-ie-2fA" id="TbO-3n-lGx"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTipRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="6ZP-gQ-kcp" customClass="ReceiptTipRow" customModule="YallBeTippin_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="95" width="393" height="54"/>
@@ -97,8 +102,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="Bvu-U7-g6W" secondAttribute="trailing" constant="20" id="rTO-xG-Abk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tipLabel" destination="07T-RU-dAB" id="kg4-XU-Vy2"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTipRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="b3U-CA-se9" customClass="ReceiptTotalRow" customModule="YallBeTippin_2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTotalRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="b3U-CA-se9" customClass="ReceiptTotalRow" customModule="YallBeTippin_2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="149" width="393" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b3U-CA-se9" id="adQ-gF-tGT">
@@ -130,6 +138,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="BgO-Ef-NSG" secondAttribute="trailing" constant="20" id="x1y-uR-zwl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="totalLabel" destination="6Ci-gr-xAG" id="Hyc-YQ-ieh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
