@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             let confirmVC = ConfirmViewController(coder: coder, items: items)
             return confirmVC
         }
-        navigationController?.pushViewController(vc, animated: true)
+        pushVC(vc)
     }
     
     func getMenuItems() -> [MenuItem] {

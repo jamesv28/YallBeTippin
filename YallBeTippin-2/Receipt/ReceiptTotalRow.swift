@@ -23,7 +23,7 @@ class ReceiptTotalRow: UITableViewCell {
     }
     
     func configure(total: Double) {
-        totalLabel.text = "\(total)"
+        totalLabel.text = total.toCurrency()
     }
 
 }

@@ -5,7 +5,7 @@
 //  Created by James Volmert on 3/11/26.
 //
 
-import Foundation
+import UIKit
 
 extension [MenuItem] {
     func calculateTotal(tip: TipOptions) -> Double {
@@ -16,5 +16,22 @@ extension [MenuItem] {
             total += sum
         }
         return total * tip.rawValue
+    }
+}
+
+extension Double {
+    func toCurrency() -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 2
+        let value = NSNumber(value: self)
+        let str = formatter.string(from: value)
+        return str ?? "N/A"
+    }
+}
+
+extension UIViewController {
+   func pushVC(_ vc: UIViewController) {
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

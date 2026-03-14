@@ -54,7 +54,7 @@ class ConfirmViewController: UIViewController {
             let TipVC = AddTipViewController(coder: coder, items: items)
             return TipVC
         }
-        navigationController?.pushViewController(vc, animated: true)
+        pushVC(vc)
     }
 
 }

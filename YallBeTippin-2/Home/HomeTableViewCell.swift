@@ -40,7 +40,7 @@ class HomeTableViewCell: UITableViewCell {
     func configure(item: MenuItem, indexPath: IndexPath) {
         self.indexPath = indexPath
         menuName.text = item.name
-        priceLabel.text = "\(item.price)"
+        priceLabel.text = item.price.toCurrency()
         imgView.image = UIImage(named: item.img)
         countLabel.text = "\(item.count)"
         if item.count > 0 {

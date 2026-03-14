@@ -51,7 +51,7 @@ class ConfirmCell: UITableViewCell {
     func configure(item: MenuItem, indexPath: IndexPath) {
         self.indexPath = indexPath
         nameLabel.text = item.name
-        priceLabel.text = "\(item.price)"
+        priceLabel.text = item.price.toCurrency()
         imgView.image = UIImage(named: item.img)
         countLabel.text = "\(item.count)"
         

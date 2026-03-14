@@ -32,6 +32,6 @@ class ReceiptRow: UITableViewCell {
         countLabel.text = "\(item.count)"
         let double = Double(item.count)
         let total = item.price * double
-        priceLabel.text = "$\(total)"
+        priceLabel.text = total.toCurrency()
     }
 }

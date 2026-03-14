@@ -63,7 +63,7 @@ class AddTipViewController: UIViewController {
             let receiptVC = ReceiptViewController(coder: coder, items: items, tip: tipOptions)
             return receiptVC
         }
-        navigationController?.pushViewController(vc, animated: true)
+        pushVC(vc)
     }
     
     func deselectButtons() {
