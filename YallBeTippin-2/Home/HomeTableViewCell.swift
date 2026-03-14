@@ -16,10 +16,10 @@ protocol HomeTableViewCellDelegate: AnyObject {
 class HomeTableViewCell: UITableViewCell {
 
     weak var delegate: HomeTableViewCellDelegate?
-    var indexPath: IndexPath?
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var menuName: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
+    private var indexPath: IndexPath?
+    @IBOutlet private weak var imgView: UIImageView!
+    @IBOutlet private weak var menuName: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
     
     
     @IBOutlet weak var orderCountStackView: UIStackView!
