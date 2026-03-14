@@ -29,6 +29,7 @@
 		AA9CF6562F56548400AF9435 /* ReceiptViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */; };
 		AA9CF6592F5667D200AF9435 /* ConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9CF6582F5667D200AF9435 /* ConfirmCell.xib */; };
 		AA9CF65A2F5667D200AF9435 /* ConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CF6572F5667D200AF9435 /* ConfirmCell.swift */; };
+		AAA02E4C2F639BF500C98CA3 /* ReceiptRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA02E4B2F639BF500C98CA3 /* ReceiptRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AA9CF6552F56548400AF9435 /* ReceiptViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReceiptViewController.storyboard; sourceTree = "<group>"; };
 		AA9CF6572F5667D200AF9435 /* ConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCell.swift; sourceTree = "<group>"; };
 		AA9CF6582F5667D200AF9435 /* ConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCell.xib; sourceTree = "<group>"; };
+		AAA02E4B2F639BF500C98CA3 /* ReceiptRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				AA787D632F62305700BEFFAF /* ReceiptItemRow.swift */,
 				AA787D652F62354B00BEFFAF /* ReceiptTipRow.swift */,
 				AA787D672F62363200BEFFAF /* ReceiptTotalRow.swift */,
+				AAA02E4B2F639BF500C98CA3 /* ReceiptRow.swift */,
 			);
 			path = Receipt;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				AA9CF6422F564F9B00AF9435 /* SceneDelegate.swift in Sources */,
 				AA787D682F62363200BEFFAF /* ReceiptTotalRow.swift in Sources */,
 				AA9CF6432F564F9B00AF9435 /* ViewController.swift in Sources */,
+				AAA02E4C2F639BF500C98CA3 /* ReceiptRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

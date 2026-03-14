@@ -18,7 +18,7 @@ class ReceiptViewController: UIViewController {
     init(coder: NSCoder, items: [MenuItem], tip: TipOptions) {
         self.items = items
         self.tip = tip
-        self.total = items.calculateTotal()
+        self.total = items.calculateTotal(tip: tip)
         super.init(coder: coder)!
     }
     
@@ -47,13 +47,14 @@ extension ReceiptViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = indexPath.row
         if row < items.count {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptItemRow", for: indexPath) as! ReceiptItemRow
+            let cell =  tableView.dequeueReusableCell(withIdentifier: "ReceiptRow", for: indexPath) as! ReceiptRow
             let item = items[row]
             cell.configure(item: item)
             return cell
         } else if row == items.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptTipRow", for: indexPath) as! ReceiptTipRow
             cell.configure(tip: tip)
+            // make sure to add identitifier for each of the table view cell in the storyboard
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiptTotalRow", for: indexPath) as! ReceiptTotalRow

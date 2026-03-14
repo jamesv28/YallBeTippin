@@ -26,30 +26,30 @@
                                 <rect key="frame" x="0.0" y="175" width="393" height="609"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptItemRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="8Pc-nU-r5m" customClass="ReceiptItemRow" customModule="YallBeTippin_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="45"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiptRow" id="4d1-dH-FHM" customClass="ReceiptRow" customModule="YallBeTippin_2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="31.333333969116211"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Pc-nU-r5m" id="Ahi-ri-cd3">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="45"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4d1-dH-FHM" id="lzM-wp-eL0">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="31.333333969116211"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="7jE-Jj-yCZ">
-                                                    <rect key="frame" x="20" y="5" width="353" height="35"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="y91-2j-YiQ">
+                                                    <rect key="frame" x="20" y="5" width="353" height="21.333333333333332"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWK-HJ-Vv8">
-                                                            <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="35"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r1-9t-21O">
+                                                            <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="21.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKR-zd-Vp6">
-                                                            <rect key="frame" x="140.66666666666666" y="0.0" width="50" height="35"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6r-7V-gCM">
+                                                            <rect key="frame" x="140.66666666666666" y="0.0" width="50" height="21.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12,50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvY-ie-2fA">
-                                                            <rect key="frame" x="190.66666666666663" y="0.0" width="162.33333333333337" height="35"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFd-0e-7S9">
+                                                            <rect key="frame" x="190.66666666666663" y="0.0" width="162.33333333333337" height="21.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -58,20 +58,20 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="7jE-Jj-yCZ" secondAttribute="bottom" constant="5" id="BSd-5v-vAg"/>
-                                                <constraint firstAttribute="trailing" secondItem="7jE-Jj-yCZ" secondAttribute="trailing" constant="20" id="Cbq-Ab-xg6"/>
-                                                <constraint firstItem="7jE-Jj-yCZ" firstAttribute="leading" secondItem="Ahi-ri-cd3" secondAttribute="leading" constant="20" id="SVZ-pU-zHN"/>
-                                                <constraint firstItem="7jE-Jj-yCZ" firstAttribute="top" secondItem="Ahi-ri-cd3" secondAttribute="top" constant="5" id="z5F-jE-SCb"/>
+                                                <constraint firstAttribute="bottom" secondItem="y91-2j-YiQ" secondAttribute="bottom" constant="5" id="Tpf-Bw-1vW"/>
+                                                <constraint firstItem="y91-2j-YiQ" firstAttribute="leading" secondItem="lzM-wp-eL0" secondAttribute="leading" constant="20" id="alM-eT-gIu"/>
+                                                <constraint firstAttribute="trailing" secondItem="y91-2j-YiQ" secondAttribute="trailing" constant="20" id="bgb-7R-Q1m"/>
+                                                <constraint firstItem="y91-2j-YiQ" firstAttribute="top" secondItem="lzM-wp-eL0" secondAttribute="top" constant="5" id="h6V-aw-uwA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="countLabel" destination="FKR-zd-Vp6" id="lrV-85-rBH"/>
-                                            <outlet property="nameLabel" destination="eWK-HJ-Vv8" id="cJV-gy-4fu"/>
-                                            <outlet property="priceLabel" destination="SvY-ie-2fA" id="TbO-3n-lGx"/>
+                                            <outlet property="countLabel" destination="D6r-7V-gCM" id="GPh-vU-3QL"/>
+                                            <outlet property="nameLabel" destination="0r1-9t-21O" id="xdC-dU-Z12"/>
+                                            <outlet property="priceLabel" destination="dFd-0e-7S9" id="hCi-pV-a0c"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTipRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="6ZP-gQ-kcp" customClass="ReceiptTipRow" customModule="YallBeTippin_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="95" width="393" height="54"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTipRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiptTipRow" rowHeight="54" id="6ZP-gQ-kcp" customClass="ReceiptTipRow" customModule="YallBeTippin_2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="81.333333969116211" width="393" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ZP-gQ-kcp" id="AKO-iX-xTt">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="54"/>
@@ -82,6 +82,9 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbo-9Q-EOx">
                                                             <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="147.66666666666666" id="jQI-4O-X74"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -106,8 +109,8 @@
                                             <outlet property="tipLabel" destination="07T-RU-dAB" id="kg4-XU-Vy2"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTotalRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="b3U-CA-se9" customClass="ReceiptTotalRow" customModule="YallBeTippin_2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="149" width="393" height="54"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReceiptTotalRow" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiptTotalRow" rowHeight="54" id="b3U-CA-se9" customClass="ReceiptTotalRow" customModule="YallBeTippin_2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="135.33333396911621" width="393" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b3U-CA-se9" id="adQ-gF-tGT">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="54"/>
@@ -118,6 +121,9 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-Sr-UuE">
                                                             <rect key="frame" x="0.0" y="0.0" width="143" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="143" id="UXG-9w-aWs"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
